@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <ul id="list"></ul>
+</head>
+<body>
+    <script>
+        let listarr = [];
+        var usertodo = prompt("enter");
+        let todoobj = {
+            id : listarr.length+1,
+            title : usertodo,
+        };
+        listarr.push(todoobj);
+        console.log(listarr);
+        document.getElementById("list").innerHTML += `<li>${usertodo}</li>`;
+        </script>
+</body>
+</html>
